@@ -78,7 +78,7 @@ const Todo = () => {
          </ul> */}
 
          <List list = {list} onRemove = {removeItem}/>
-          {list.length>0 ? <button onClick={clearAll}>Clear All</button> : ''}
+          {list.length>0 ? <button className='clearButton' onClick={clearAll}>Clear All</button> : ''}
          </div>
         </>
     )
